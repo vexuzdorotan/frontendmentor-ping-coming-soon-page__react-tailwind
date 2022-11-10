@@ -5,7 +5,7 @@ import { brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- i
 
 const Brands = () => {
   return (
-    <div className='flex flex-row mb-4'>
+    <div className='flex flex-row mb-2'>
       <FontAwesomeIcon
         icon={brands('facebook-f')}
         className='bg-wnite text-primaryBlue w-4 h-4 rounded-full p-2 mx-2 hover:bg-primaryBlue hover:text-white border-2'

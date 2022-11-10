@@ -8,7 +8,7 @@ import Brands from './components/Brands'
 import Copyright from './components/Copyright'
 import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
     <>
       <Background>
