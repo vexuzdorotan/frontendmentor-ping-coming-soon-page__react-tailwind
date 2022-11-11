@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      <p className='attribution fixed bg-slate-100 text-center w-full bottom-0'>
+      <p className='attribution bg-slate-100 text-center w-full bottom-0'>
         Challenge by{' '}
         <a
           href='https://www.frontendmentor.io?ref=challenge'

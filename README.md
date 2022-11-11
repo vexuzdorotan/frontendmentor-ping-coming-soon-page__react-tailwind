@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Ping Coming Soon Page | Frontend Mentor](https://www.frontendmentor.io/solutions/ping-coming-soon-page-using-react-and-tailwind-css-RRlpufK149)
+- Live Site URL: [Ping Coming Soon Page | VeXuZ](https://vexuzdorotan.github.io/frontendmentor-ping-coming-soon-page__react-tailwind/)
 
 ## My process
 
