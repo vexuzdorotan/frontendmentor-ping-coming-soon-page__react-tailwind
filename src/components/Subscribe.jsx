@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const Subscribe = () => {
   const [email, setEmail] = useState('')
   const [isEmailValid, setIsEmailValid] = useState(false)
+
+  const [errorMessage, setErrorMessage] = useState('')
   const [borderColor, setBorderColor] = useState('')
 
   const validateEmail = (email) => {
@@ -14,15 +16,25 @@ const Subscribe = () => {
 
   const handleEmailOnChange = (e) => {
     setEmail(e.target.value)
-    setIsEmailValid(validateEmail(e.target.value))
-
-    // console.log(borderColor)
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const color = isEmailValid ? 'secondaryPaleBlue' : 'secondaryLightRed'
 
+    const validateEmailValue = validateEmail(email)
+
+    setIsEmailValid(validateEmailValue)
+
+    const color = validateEmailValue
+      ? 'border-primaryBlue'
+      : 'border-secondaryLightRed'
+
+    const errorMessageValue =
+      email === ''
+        ? 'Whoops! It looks like you forgot to add your email'
+        : 'Please provide a valid email address'
+
+    setErrorMessage(errorMessageValue)
     setBorderColor(color)
   }
 
@@ -30,26 +42,30 @@ const Subscribe = () => {
     <>
       <p className='text-sm mb-8'>Subscribe and get notified</p>
 
-      <form className='grid grid-cols-3 gap-x-4 w-[40rem]'>
+      <form className='grid grid-cols-1 lg:grid-cols-3 gap-x-4 w-[40rem]'>
         <input
           type='email'
-          className={`peer text-sm border-2 border-${borderColor} focus:outline-primaryBlue col-span-2 px-5 py-3 rounded-full`}
+          className={`block text-sm border-2 ${borderColor} focus:outline-secondaryPaleBlue col-span-1 lg:col-span-2 mx-16 px-5 py-3 rounded-full lg:mx-0`}
           placeholder='Your email address...'
           value={email}
           onChange={handleEmailOnChange}
         />
 
+        <p
+          className={`${
+            isEmailValid ? 'invisible' : 'visible'
+          } italic text-sm text-secondaryLightRed text-center font-light col-span-1 lg:col-span-3 lg:order-last mt-2 mb-8 lg:text-left lg:mb-0 lg:ml-5`}
+        >
+          {errorMessage}
+        </p>
+
         <button
           type='submit'
-          className='text-sm bg-primaryBlue text-white col-span-1 rounded-full hover:bg-secondaryPaleBlue'
+          className='text-sm bg-primaryBlue text-white col-span-1 rounded-full hover:bg-secondaryPaleBlue mx-16 py-4 lg:mx-0'
           onClick={handleSubmit}
         >
           Notify Me
         </button>
-
-        <p className='invisible peer-invalid:visible text-sm text-secondaryLightRed font-light col-span-3 mt-2 ml-5'>
-          Please provide a valid email address
-        </p>
       </form>
     </>
   )

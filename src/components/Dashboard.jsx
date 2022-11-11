@@ -5,7 +5,7 @@ import IllustrationDashboard from '../images/illustration-dashboard.png'
 const Dashboard = () => {
   return (
     <main>
-      <img src={IllustrationDashboard} alt='' className='h-[22rem] my-8' />
+      <img src={IllustrationDashboard} alt='' className='h-[22rem] my-14' />
     </main>
   )
 }

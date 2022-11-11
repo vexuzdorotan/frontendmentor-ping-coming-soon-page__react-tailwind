@@ -2,10 +2,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    screens: {
-      sm: '375px',
-      lg: '1440px',
-    },
     extend: {
       colors: {
         primaryBlue: 'hsl(223, 87%, 63%)',
@@ -13,6 +9,10 @@ module.exports = {
         secondaryLightRed: 'hsl(354, 100%, 66%)',
         neutralGray: 'hsl(0, 0%, 59%)',
         neutralVeryDarkBlue: 'hsl(209, 33%, 12%)',
+      },
+      screens: {
+        sm: '375px',
+        '2xl': '1440px',
       },
     },
   },
