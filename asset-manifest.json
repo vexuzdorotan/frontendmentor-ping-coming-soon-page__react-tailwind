@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/css/main.5ed05d26.css",
-    "main.js": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/js/main.83cb9687.js",
+    "main.css": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/css/main.9a26e3ef.css",
+    "main.js": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/js/main.26595205.js",
     "static/media/illustration-dashboard.png": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/media/illustration-dashboard.f9aaf3db81c10cfaff45.png",
     "index.html": "/frontendmentor-ping-coming-soon-page__react-tailwind/index.html",
-    "main.5ed05d26.css.map": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/css/main.5ed05d26.css.map",
-    "main.83cb9687.js.map": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/js/main.83cb9687.js.map"
+    "main.9a26e3ef.css.map": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/css/main.9a26e3ef.css.map",
+    "main.26595205.js.map": "/frontendmentor-ping-coming-soon-page__react-tailwind/static/js/main.26595205.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ed05d26.css",
-    "static/js/main.83cb9687.js"
+    "static/css/main.9a26e3ef.css",
+    "static/js/main.26595205.js"
   ]
 }
